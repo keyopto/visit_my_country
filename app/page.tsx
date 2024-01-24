@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
     return (
@@ -8,7 +8,9 @@ export default function Home() {
                     <h1 className="text-7xl font-bold" >Visit my country</h1>
                     <h2 className="text-xl pt-5">What if you shared your discoveries ?</h2>
                 </div>
-                <button className="btn-primary">Click to begin</button>
+                <Link href="/articles">
+                    <button className="btn-primary">Click to begin</button>
+                </Link>
             </header>
         </main>
     )
